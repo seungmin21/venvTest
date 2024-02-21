@@ -3,7 +3,7 @@ from flask import jsonify
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def get_logs():
     try:
         with open('log.json', 'r', encoding='utf-8') as f:
